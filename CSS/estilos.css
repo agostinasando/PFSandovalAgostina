@@ -1,0 +1,197 @@
+/* #region general */
+.header {
+  background-color: black;
+  height: 200px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header h1 {
+  color: white;
+  font-size: 60px;
+  font-family: "Mukta", sans-serif;
+  text-align: justify;
+  margin: 40px;
+}
+
+.navbar {
+  height: auto;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  flex-direction: row;
+  margin: 40px;
+}
+
+.header-nav a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Mukta", sans-serif;
+  align-items: center;
+}
+
+/* #endregion */
+.nosotros {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nosotros h1 {
+  color: black;
+  font-size: 60px;
+  margin-top: 30px;
+}
+
+.nosotros h2 {
+  color: black;
+  margin: 30px;
+  font-size: 45px;
+  font-family: "Mukta", sans-serif;
+}
+
+
+.nosotros p {
+  margin: 3%;
+  color: black;
+  font-size: 20px;
+  font-family: "Mukta", sans-serif;
+  text-align: center;
+  max-width: 800px;
+}
+
+body {
+  margin: 0%;
+  height: 100vh;
+}
+
+.pie {
+  background-color: black;
+  height: 25px;
+}
+
+.pie nav a {
+  color: white;
+  font-size: 15px;
+  font-family: "Mukta", sans-serif;
+  align-items: center;
+  align-content: center;
+  /*margin: 20px;*/
+}
+
+.pie nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* #region porque elegirnos */
+.porqueElegirnos h2 {
+  text-align: center;
+  color: black;
+  font-size: 45px;
+  font-family: "Mukta", sans-serif;
+  margin: 50px;
+}
+
+
+
+.porqueElegirnos h3 {
+  text-align: center;
+  font-family: "Mukta", sans-serif;
+  text-align: center;
+
+
+
+}
+
+
+.seccion-div {
+  display: block;
+  margin: 5%;
+  text-align: center;
+  font-family: "Mukta", sans-serif;
+}
+
+.seccion-div div {
+  margin: 1%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seccion-div div p {
+  width: 500px;
+}
+
+/*#endregion */
+/* #region servicios */
+.formulario {
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Mukta", sans-serif;
+
+
+}
+
+.formulario h4 ¨ {
+  font-family: "Mukta", sans-serif;
+
+}
+
+#boton1 {
+  width: 100px;
+}
+
+#boton2 {
+  width: 100px;
+}
+
+/* #endregion */
+
+@media screen and (max-width: 768px) {
+  .pie nav a {
+    font-size: 0.6rem;
+  }
+
+  .col-md-3 h4 {
+    font-size: 1rem;
+  }
+
+  .header {
+    height: fit-content;
+  }
+
+  .seccion-div {
+    display: block;
+  }
+
+  .seccion-div div p {
+    margin: 50px;
+  }
+
+
+}
+
+@media screen and (min-width: 769px) {
+  .col-md-3 h4 {
+    font-size: 1rem;
+  }
+}
+
+/*<nav class="header-nav">
+<a href="../index.html">Inicio</a>
+<a href="./porqueElegirnos.html">Por que elegirnos</a>
+<a href="./servicios.html">Servicios</a>
+<a href="">Inspiracion</a>
+<a href="./pediTuCita.html">Pedi tu cita</a>
+</nav>*/
