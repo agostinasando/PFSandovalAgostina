@@ -1,185 +1,199 @@
+$header-bg-color: black;
+$header-height: 200px;
+$header-font: "Mukta", sans-serif;
+$header-font-size: 60px;
+$navbar-font-size: 20px;
+$nuestros-font-size: 60px;
+$nuestros-h2-font-size: 45px;
+$nuestros-p-font-size: 20px;
+$pie-font-size: 1rem;
+$pie-height: 5%;
+
 .header {
-    background-color: black;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+  background-color: $header-bg-color;
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  
+  h1 {
+    color: white;
+    font-size: $header-font-size;
+    font-family: $header-font;
+    text-align: justify;
+    margin: 10%;
+  }
+}
+
+.navbar {
+  height: auto;
+  justify-content: space-around;
+  padding-bottom: 2%;
+  flex-direction: row;
+  margin: 10%;
+  
+  a {
+    color: white;
+    font-size: $navbar-font-size;
+    text-decoration: none;
+    font-family: $header-font;
     align-items: center;
+  }
+}
+
+.nosotros {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   
-    h1 {
-      color: white;
-      font-size: 60px;
-      font-family: "Mukta", sans-serif;
-      text-align: justify;
-      margin: 40px;
-    }
+  h1 {
+    color: black;
+    font-size: $nuestros-font-size;
+    margin-top: 30px;
   }
   
-  .navbar {
-    height: auto;
-    justify-content: space-around;
-    padding-bottom: 10px;
-    flex-direction: row;
-    margin: 40px;
+  h2 {
+    color: black;
+    margin: 30px;
+    font-size: $nuestros-h2-font-size;
+    font-family: $header-font;
   }
   
-  .header-nav {
+  p {
+    margin: 3%;
+    color: black;
+    font-size: $nuestros-p-font-size;
+    font-family: $header-font;
+    text-align: center;
+    max-width: 800px;
+  }
+}
+
+body {
+  margin: 0%;
+  height: 100vh;
+}
+
+.pie {
+  background-color: black;
+  height: $pie-height;
+  width: 100%;
+  
+  nav {
     a {
       color: white;
-      font-size: 20px;
-      text-decoration: none;
-      font-family: "Mukta", sans-serif;
+      font-size: $pie-font-size;
+      font-family: $header-font;
       align-items: center;
+      align-content: center;
     }
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* #region porque elegirnos */
+.porqueElegirnos {
+  h2 {
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+    font-family: $header-font;
+    margin: 50px;
   }
   
-  .nosotros {
+  h3 {
+    text-align: center;
+    font-family: $header-font;
+    text-align: center;
+  }
+}
+
+.servicios {
+  width: 99%;
+  justify-content: center;
+  align-items: center;
+}
+
+.seccion-div {
+  display: block;
+  margin: 5%;
+  text-align: center;
+  font-family: $header-font;
+  
+  div {
+    margin: 1%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     align-items: center;
-  
-    h1 {
-      color: black;
-      font-size: 60px;
-      margin-top: 30px;
-    }
-  
-    h2 {
-      color: black;
-      margin: 30px;
-      font-size: 45px;
-      font-family: "Mukta", sans-serif;
-    }
-  
+    
     p {
-      margin: 3%;
-      color: black;
-      font-size: 20px;
-      font-family: "Mukta", sans-serif;
-      text-align: center;
-      max-width: 800px;
+      width: 500px;
     }
   }
+}
+
+.formulario {
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: $header-font;
   
-  body {
-    margin: 0%;
-    height: 100vh;
+  h4 {
+    font-family: $header-font;
   }
   
+  #boton1, #boton2 {
+    width: 100px;
+  }
+}
+
+/* #endregion */
+
+@media screen and (max-width: 768px) {
   .pie {
-    background-color: black;
-    height: 25px;
-  
     nav {
       a {
-        color: white;
-        font-size: 15px;
-        font-family: "Mukta", sans-serif;
-        align-items: center;
-        align-content: center;
-        margin: 20px;
+        font-size: 0.6rem;
       }
-  
-      display: flex;
-      justify-content: space-evenly;
-      flex-direction: row;
-      align-items: center;
+    }
+    
+    nav {
+      display: block;
     }
   }
   
-  .porqueElegirnos {
-    h2 {
-      text-align: center;
-      color: black;
-      font-size: 45px;
-      font-family: "Mukta", sans-serif;
-      margin: 50px;
-    }
+  .col-md-3 h4 {
+    font-size: 1rem;
+  }
   
-    h3 {
-      text-align: center;
-      font-family: "Mukta", sans-serif;
-      text-align: center;
-    }
+  .header {
+    height: fit-content;
   }
   
   .seccion-div {
     display: block;
-    margin: 5%;
-    text-align: center;
-    font-family: "Mukta", sans-serif;
-  
-    div {
-      margin: 1%;
-      display: flex;
-      justify-content: start;
-      flex-direction: column;
-      align-items: center;
-  
-      p {
-        width: 500px;
-      }
+    
+    div p {
+      margin: 50px;
     }
   }
   
-  .formulario {
-    margin: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: "Mukta", sans-serif;
-  
-    h4 {
-      font-family: "Mukta", sans-serif;
-    }
-  
-    #boton1 {
-      width: 100px;
-    }
-  
-    #boton2 {
-      width: 100px;
-    }
+  .porqueElegirnos {
+    max-width: 100%;
   }
-  
-  @media screen and (max-width: 768px) {
-    .pie {
-      nav {
-        a {
-          font-size: 0.6rem;
-        }
-      }
-  
-      display: block;
-    }
-  
-    .col-md-3 {
-      h4 {
-        font-size: 1rem;
-      }
-    }
-  
-    .header {
-      height: fit-content;
-    }
-  
-    .seccion-div {
-      display: block;
-  
-      div {
-        p {
-          margin: 50px;
-        }
-      }
-    }
+}
+
+@media screen and (min-width: 769px) {
+  .col-md-3 h4 {
+    font-size: 1rem;
   }
-  
-  @media screen and (min-width: 769px) {
-    .col-md-3 {
-      h4 {
-        font-size: 1rem;
-      }
-    }
-  }
+}

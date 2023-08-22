@@ -1,7 +1,6 @@
 .header {
   background-color: black;
   height: 200px;
-
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -19,7 +18,7 @@
 .navbar {
   height: auto;
   justify-content: space-around;
-  padding-bottom: 10px;
+  padding-bottom: 2%;
   flex-direction: row;
   margin: 10%;
 }
@@ -68,16 +67,17 @@ body {
 
 .pie {
   background-color: black;
-  height: 25px;
+  height: 5%;
+  width: 100%;
+  
 }
 
 .pie nav a {
   color: white;
-  font-size: 15px;
+  font-size: 1 rem;
   font-family: "Mukta", sans-serif;
   align-items: center;
   align-content: center;
-  margin: 20px;
 }
 
 .pie nav {
@@ -91,11 +91,16 @@ body {
 .porqueElegirnos h2 {
   text-align: center;
   color: black;
-  font-size: 45px;
+  font-size: 3rem;
   font-family: "Mukta", sans-serif;
   margin: 50px;
 }
 
+.servicios {
+width: 99%;
+justify-content: center;
+align-items: center;
+}
 
 
 .porqueElegirnos h3 {
@@ -172,6 +177,9 @@ body {
     margin: 50px;
   }
 
+  .porqueElegirnos {
+    max-width: 100%;
+  }
 
 }
 
